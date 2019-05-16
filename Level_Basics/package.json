@@ -1,0 +1,15 @@
+{
+  "name": "level_basics",
+  "version": "1.0.0",
+  "main": "File1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "underscore": "^1.9.1"
+  }
+}
