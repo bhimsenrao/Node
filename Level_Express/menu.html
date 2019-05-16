@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<body ng-app="myApp">
+
+<p><a href="#/!">Main</a></p>
+
+<a href="#!ViewForm">ViewAll</a>
+<a href="#!green">Green</a>
+<a href="#!blue">Blue</a>
+
+<div ng-view>Welcome to ALL</div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "menu.html"
+    })
+    .when("/ViewForm", {
+        templateUrl : "ViewForm"
+    })
+    .when("/green", {
+        templateUrl : "green.htm"
+    })
+    .when("/blue", {
+        templateUrl : "blue.htm"
+    });
+});
+</script>
+
+<p>Click corresponding Link to connect</p>
+</body>
+</html>
