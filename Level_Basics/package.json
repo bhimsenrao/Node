@@ -10,6 +10,6 @@
   "description": "",
   "dependencies": {
     "inquirer": "^6.2.2",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
